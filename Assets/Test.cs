@@ -9,11 +9,11 @@ public class Boss
     
     public void Magic()
     {
+
+        if(mp >= 5)
+        {
         this.mp -= 5;
         int magic = this.mp;
-
-        if(mp >= 0)
-        {
 
         Debug.Log("魔法攻撃をした。残りMPは" + magic);
         }
